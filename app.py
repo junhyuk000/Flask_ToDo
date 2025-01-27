@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 # MySQL 연결 설정
 db_config = {
-    'host': '10.0.66.6',
+    'host': 'my_network',
     'user': 'sejong',
     'password': '1234',
     'database': 'todo_db'
@@ -140,4 +140,4 @@ def delete_todo(todo_id):
         conn.close()
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0",port=80,debug=True)
+    app.run(host="0.0.0.0",port=8001,debug=True)
